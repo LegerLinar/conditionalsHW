@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -153,6 +154,29 @@ public class Main {
             System.out.println("Местов нет");
         }
 
+    }
+
+    public static void task7(){
+        System.out.println("Задача 7");
+
+//        Даны три числа:
+//int one;
+//int two;
+//int three;
+//С помощью условного оператора и конструкции else напишите программу,
+// которая вычисляет, какое из трех чисел бо́льшее, и выводит результат в консоль.
+        int one = 65;
+        int two = 222;
+        int three = 13;
+
+        if(one > two && one > three){
+            System.out.println("one - самое большое число");
+
+        } else if (two > three) {
+            System.out.println("two - самое большое число");
+        } else {
+            System.out.println("three - самое большое число");
+        }
     }
 
 }
