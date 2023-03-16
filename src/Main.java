@@ -91,12 +91,14 @@ public class Main {
             System.out.println("Если возраст человека равен " + teenager + ", то ему нужно ходить в школу");
         }
 
-        if (junior > 18 && junior < 24) {
+        else if (junior > 18 && junior < 24) {
             System.out.println("Если возраст человека равен " + junior + ", то ему нужно ходить в университет");
         }
 
         if (adult > 25) {
             System.out.println("Если возраст человека больше " + adult + ", то ему пора на работу");
+        } else {
+            System.out.println("Человеку все равно куда-то надо ходить");
         }
 
     }
