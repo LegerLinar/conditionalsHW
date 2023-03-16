@@ -2,6 +2,7 @@ public class Main {
         public static void main(String[] args) {
             task1();
             task2();
+            task3();
         }
 
         public static void task1 () {
@@ -39,5 +40,28 @@ public class Main {
             } else {
                 System.out.println("Сегодня " + temperature + " градусов, тепло, можно идти без шапки");
             }
+        }
+
+        public static void task3(){
+            System.out.println("Задача 3");
+//        За превышение скорости водителю могут выписать штраф. Напишите программу, которая сообщает водителю о том, что:
+//скорость превышена, если она больше 60 км/ч;
+//превышения скорости нет, если она меньше 60 км/ч.
+//При выполнении каждого условия программа должна выводить такое сообщение: «Если скорость …, то
+// (вывести в зависимости от результата) придется заплатить штраф / можно ездить спокойно».
+            int badDriver = 150;
+            int goodDriver = 55;
+
+            if(60 > badDriver){
+                System.out.println("Вы едете со скростью " + badDriver + " км/ч, можно ездить спокойно");
+            } else {
+                System.out.println("Вы едете со скоростью " + badDriver + " км/ч, придется заплатить штраф");
+            }
+            if(60 > goodDriver){
+                System.out.println("Вы едете со скростью " + goodDriver + " км/ч, можно ездить спокойно");
+            } else {
+                System.out.println("Вы едете со скоростью " + goodDriver + " км/ч, придется заплатить штраф");
+            }
+
         }
 }
