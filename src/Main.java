@@ -119,14 +119,13 @@ public class Main {
         int child = 12;
         int teenager = 16;
 
-        if (baby < 5) {
+        if (teenager < 5) {
             System.out.println("Если возраст ребенка равен " + baby + " - он не может кататься на аттракционе");
         }
 
-        if (child > 5 && child < 14) {
+        if (teenager > 5 && teenager < 14) {
             System.out.println("Если возраст ребенка равен " + child + " - он может кататься только в сопровождении взрослого");
-        }
-        if (teenager > 14) {
+        } else {
             System.out.println("Если возраст ребенка равен " + teenager + ", то ему можно кататься на аттракционе без сопровождения взрослого");
         }
     }
